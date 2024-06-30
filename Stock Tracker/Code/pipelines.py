@@ -17,7 +17,7 @@ class StockFollowupPipeline:
 
     def create_connection(self):
         self.conn = pyodbc.connect('Driver={SQL Server};'
-                     'Server=DESKTOP-34ID2C3;'
+                     'Server=DESKTOP-34ID2F4;'
                      'Database=stocks;'
                      'Trusted_Connection=yes;')
         self.curr = self.conn.cursor()
