@@ -1,0 +1,5 @@
+In this project I made an application to automate the data collection and analysis for S&P 500 companies. 
+I use the Python library Scrapy to scrape data from Slickcharts and the library yfinance to retrieve additional company details.
+Once the data is gathered, I clean and format it before saving it in a SQL Server database. 
+The cleaned data is then loaded into Power BI, where I have built an interactive dashboard to provide insights into the S&P 500 companies.
+This process is automated to repeat every 24 hours, ensuring that the database and Power BI dashboard are continuously updated with the latest data about the S&P 500 companies. 
