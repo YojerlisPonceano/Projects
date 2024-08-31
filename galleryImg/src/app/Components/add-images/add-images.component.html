@@ -1,0 +1,26 @@
+<app-nav-bar></app-nav-bar>
+
+<form class="needs-validation mx-5" novalidate>
+    <div class="upload-container mt-5">
+        <input type="file" (change)="onFileSelected($event)" class="upload-input" required>
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control mt-2" placeholder="Titulo Imagen" id="image-title" minlength="1"
+            maxlength="30">
+    </div>
+
+    <div class="container mt-2">
+        <div>
+            <img src={{image.base64Url}}>
+        </div>
+    </div>
+
+    <div class="input-group mt-2">
+        <textarea class="form-control" placeholder="Descripcion" id="image-description" maxlength="150"></textarea>
+    </div>
+</form>
+
+<button class="save-button mt-4 mx-5 mb-5" (click)="saveNewImage()">Guardar</button>
+
+<app-footer></app-footer>
